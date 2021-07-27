@@ -1,0 +1,30 @@
+[
+    {   "name":"Relocate.IT track",
+        "date":"15 October, 2021",
+        "track":["Access to Relocate.IT track", "Access to a dedicated area at the afterparty"],
+        "price": "349 EURO + VAT"
+    },
+    {   "name":"ML / AI track",
+        "date":"15 October, 2021",
+        "track":["Access to ML/AI track", "Access to a dedicated area at the afterparty"],
+        "price": "349 EURO + VAT"
+    }, 
+    {   "name":"Full 1st Day",
+        "date":"15 October, 2021",
+        "track":["Access to Relocate.IT track", "Access to ML/AI track","Lunch","Access to a dedicated area at the afterparty"],
+        "price": "449 EURO + VAT"
+    }, 
+    
+    {   "name":"Investors Day",
+        "date":"16 October, 2021",
+        "track":["Access to Investors Day by the Lake", "Access to business game","Access to VIP area (afterparty)","Dedicated travel manager"],
+        "price": "549 EURO + VAT"
+    },
+    
+    {   "name":"All Access Ticket",
+        "date":"15-16 October, 2021",
+        "track":["Access to all tracks of the Conference", "Access to business game","Access to VIP area (afterparty)","Dedicated travel manager"],
+        "price": "699 EURO + VAT"
+    }
+]
+

@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* .jLpiLS{
+  background-color: #FFFFFF;
+  border-radius: 10.4px
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'TT Lakes Neue';
+  src: local('ttlakes'), url(./fonts/ttlakes/TTLakesNeueExt-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'TT Lakes Neue';
+  font-weight: 900;
+  src: local('ttlakes'), url(./fonts/ttlakes/TTLakesNeueExt-Bold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'TT Lakes Neue';
+  font-weight: 500;
+  src: local('ttlakes'), url(./fonts/ttlakes/TTLakesNeueExt-Medium.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'TT Lakes Neue';
+  font-weight: 300;
+  src: local('ttlakes'), url(./fonts/ttlakes/TTLakesNeueExt-Thin.ttf) format('opentype');
+}

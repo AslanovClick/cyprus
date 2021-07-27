@@ -3,6 +3,7 @@ p{
     margin: 0;
 }
 .timerContainer{
+    width: 300px;
 
 }
 .timer{
@@ -32,3 +33,62 @@ p{
 .timerTime:not(:last-child){
     margin-right: 6px;
 }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .timerContainer {
+      width: 480px;
+    }
+    .timerTime{
+        font-size: 43px;
+    }
+    .date{
+    font-size: 12px;
+    line-height: 14px;
+    }
+  }
+  @media (max-width: 1151px) and (min-width: 1024px) {
+    /* .timerContainer {
+      width: 380px;
+    } */
+    .timerTime{
+        font-size: 43px;
+    }
+    .date{
+    font-size: 12px;
+    line-height: 14px;
+    }
+    .timer{
+        justify-content: space-between;
+    }
+  }
+  @media (max-width: 1920px) and (min-width: 1151px) {
+    /* .timerContainer {
+      width: 900px;
+    } */
+    .timerTime{
+        font-size: 54px;
+    }
+    .date{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .timer{
+        justify-content: space-between;
+    }
+  }
+  @media (min-width: 1920px) {
+    .timerContainer {
+      width: 1200px;
+    }
+    .timerTime{
+        font-size: 72px;
+    }
+    .date{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .timer{
+        justify-content: start;
+    }
+  }
+  

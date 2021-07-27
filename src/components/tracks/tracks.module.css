@@ -1,0 +1,414 @@
+.tracksContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  overflow: hidden;
+}
+.title {
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 32px;
+}
+.download {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 8px;
+}
+.download span {
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.variant {
+  /* margin-top: 65px; */
+  width: 100%;
+  opacity: 0;
+  transition-duration: 1s easy;
+}
+
+.variantActive {
+    opacity: 1;
+    transition-duration: 1s;
+  }
+
+.variantTitle, .variantTitleActive {
+    display: inline-block;
+    /* width: 180px; */
+    margin-right: 8px;
+  border-radius: 10px;
+  padding: 12px;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 110%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  background: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.variantTitleActive{
+    color: #0047ff;
+  background: #eeeeee;
+}
+.info {
+    margin-top: 30px;
+  background: #eeeeee;
+  border-radius: 15px;
+}
+.variantContant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 15px;
+}
+.when {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  padding: 2px;
+  border-right: 1px solid black;
+}
+.whenIcon {
+  width: 8px;
+  height: 8px;
+  margin-right: 2px;
+}
+.whenTitle {
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 110%;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #0047ff;
+}
+.whenDate {
+  margin-left: 18px;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.whenContainer {
+  display: flex;
+  width: 90%;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 12px 0;
+}
+
+.line, .lineBox {
+  /* margin: 20px 0; */
+  position: relative;
+  width: 90%;
+  border-bottom: 1px solid #000000;
+}
+.lineBox{
+    width: 100%;
+}
+.lineLeft, .lineLeftBox {
+  position: absolute;
+  top: -0.25em;
+  height: 10px;
+  border-left: 1px solid #000000;
+}
+.lineRight, .lineRightBox {
+  position: absolute;
+  top: -0.25em;
+  right: 0em;
+  height: 10px;
+  border-left: 1px solid #000000;
+}
+.lineBox, .lineLeftBox, .lineRightBox {
+    display: none;
+  }
+.bigNumber {
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.smallNumber {
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.trackInfo {
+  padding-top: 12px;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #0047ff;
+}
+.trackInfoContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 12px;
+}
+.slider{
+    width: 100%;
+}
+.sliderTitle{
+    display: flex;
+    /* overflow: hidden; */
+    margin-top: 20px;
+}
+
+.lines{
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+  }
+
+@media (max-width: 1151px) and (min-width: 768px) {
+  .download span {
+    font-size: 16px;
+  }
+  .icon {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .tracksContainer {
+    width: 480px;
+    margin-top: 200px;
+  }
+  .whenIcon {
+    width: 12px;
+    height: 12px;
+  }
+  /* .whenTitle {
+    font-size: 16px;
+  } */
+  .smallNumber{
+    font-size: 16px;
+}
+}
+@media (max-width: 1151px) and (min-width: 1024px) {
+  .tracksContainer {
+    width: 720px;
+    margin-top: 250px;
+  }
+  .whenIcon {
+    width: 10px;
+    height: 10px;
+  }
+  .whenTitle {
+    font-size: 12px;
+  }
+  .when {
+    width: 90px;
+  }
+  .whenIcon {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+  }
+  .infoContainerTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+  .line, .lineLeft, .lineRight {
+      display: none;
+  }
+
+  .lineBox, .lineLeftBox, .lineRightBox {
+    display: block;
+  }
+  .whenContainer {
+    width: 100%;
+  }
+  .trackInfoContainer {
+    padding: 0 12px 100px 12px;
+  }
+
+  .bigNumber {
+    font-size: 43px;
+padding: 12px;  
+}
+.smallNumber{
+    font-size: 12px;
+}
+.trackContent{
+    display: flex;
+    align-items: center;
+}
+.trackInfo{
+    margin-left: 20%;
+    font-size: 12px;
+line-height: 17px;
+}
+}
+@media (max-width: 1920px) and (min-width: 1151px) {
+  .tracksContainer {
+    width: 900px;
+    margin-top: 300px;
+  }
+  .download span {
+    font-size: 18px;
+  }
+  .icon {
+    margin-right: 12px;
+    width: 30px;
+    height: 30px;
+  }
+  .when{
+      width: 100px;
+  }
+  .whenIcon {
+    width: 12px;
+    height: 12px;
+  }
+  .line, .lineLeft, .lineRight {
+    display: none;
+}
+.lineBox, .lineLeftBox, .lineRightBox {
+    display: block;
+  }
+.lineBox, .lineLeftBox, .lineLeftBox {
+    border-bottom: 2px solid #000000;
+  }
+  .infoContainerTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.trackContent{
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+.trackInfo{
+    margin-left: 20%;
+    font-size: 15px;
+line-height: 21px;
+}
+.whenDate {
+ font-size: 15px;
+  line-height: 21px;
+  }
+  .whenTitle {
+    font-size: 15px;
+  }
+  .trackInfoContainer {
+    padding: 0 12px 140px 12px;
+  }
+  .bigNumber {
+    font-size: 54px;
+padding: 12px;  
+}
+.smallNumber{
+    font-size: 12px;
+}
+
+}
+
+@media (min-width: 1920px) {
+  .tracksContainer {
+    width: 1200px;
+    margin-top: 350px;
+  }
+
+  .download span {
+    font-size: 24px;
+  }
+  .icon {
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+  .whenIcon {
+    width: 16px;
+    height: 16px;
+  }
+  .when{
+    width: 130px;
+}
+.whenTitle{
+    font-size: 20px;
+}
+.whenDate {
+    font-size: 20px;
+    line-height: 28px;
+     }
+  .line, .lineLeft, .lineRight {
+    display: none;
+}
+.lineBox, .lineLeftBox, .lineRightBox {
+    display: block;
+  }
+.lineBox, .lineLeftBox, .lineLeftBox {
+    border-bottom: 2px solid #000000;
+  }
+  .infoContainerTitle{
+    display: flex;
+}
+.trackContent{
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+}
+.trackInfoContainer {
+    padding: 0 12px 160px 12px;
+  }
+  .trackInfo{
+    margin-left: 30%;
+    font-size: 20px;
+line-height: 28px;
+}
+.bigNumber {
+    font-size: 72px;
+padding: 12px;  
+}
+.smallNumber{
+    font-size: 20px;
+}
+.variantTitle, .variantTitleActive{
+    font-size: 20px;
+line-height: 110%;
+margin-right: 20px;
+
+}
+}

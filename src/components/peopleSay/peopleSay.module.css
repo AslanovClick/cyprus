@@ -1,0 +1,363 @@
+.speakersContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  /* overflow: hidden; */
+}
+.title {
+  margin: 0 0 50px 0;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 8px;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.arrowRight,
+.arrowLeft {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+.arrowLeft {
+  transform: rotate(135deg);
+}
+.arrow:hover,
+.arrow.focus {
+  background: #ffffff;
+  /* transition-duration: 1s; */
+}
+.arrow:hover .arrowRight,
+.arrow:hover .arrowLeft {
+  border-color: black;
+  /* transition-duration: 1s; */
+}
+
+.photo {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+}
+.photoContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.name,
+.nameDesktop {
+  margin-left: 12px;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.nameDesktop {
+  display: none;
+}
+.line {
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px solid #ffffff;
+  margin-left: 20px;
+}
+
+.arrowContainer {
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.variant {
+  width: 100%;
+  opacity: 0;
+}
+
+.variantActive {
+  padding: 12px;
+  border-radius: 10px 10px 0 10px;
+  background: #eeeeee;
+  opacity: 1;
+  /* transition-duration: 1s; */
+}
+.lines {
+  width: 100%;
+  height: auto;
+  margin-top: 15%;
+}
+.info {
+  padding: 24px 0;
+  padding-bottom: 48px;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.infoFooter {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding: 12px;
+  margin-left: 150px;
+  margin-top: -12px;
+  border-radius: 0 0 10px 10px;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #0047ff;
+  background: #eeeeee;
+}
+.speakerWrapper {
+  position: relative;
+}
+.plusContainer {
+  top: 0em;
+  right: 0em;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 3px;
+}
+.ungleWhite {
+  position: absolute;
+  left: -2.4em;
+  top: 1.2em;
+  width: 24px;
+  height: 24px;
+  transform: rotate(90deg);
+}
+.lineTop {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000000;
+}
+.lineLeft {
+  position: absolute;
+  top: -0.5em;
+  height: 12px;
+  border-left: 1px solid #000000;
+}
+.lineRight {
+  position: absolute;
+  top: -0.5em;
+  right: -0.1em;
+  height: 12px;
+  border-left: 1px solid #000000;
+}
+@media (max-width: 1151px) and (min-width: 768px) {
+  .plusContainer {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .speakersContainer {
+    width: 480px;
+  }
+  .photo {
+    width: 98px;
+    height: 98px;
+  }
+  .title {
+    font-size: 56px;
+  }
+  .name {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+  .info {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .infoFooter {
+    width: 50%;
+    padding: 12px;
+    margin-left: 240px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ungleWhite {
+    left: -1.6em;
+    top: 0.8em;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 1151px) and (min-width: 1024px) {
+  .speakersContainer {
+    width: 720px;
+  }
+  .photo {
+    width: 165px;
+    height: 165px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .infoFooter {
+    width: 30%;
+    padding: 12px;
+    margin-left: 504px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .ungleWhite {
+    left: -2.3em;
+    top: 0.8em;
+    width: 32px;
+    height: 32px;
+  }
+  .name {
+    display: none;
+  }
+  .nameDesktop {
+    display: block;
+  }
+  .speakerWrapper {
+    display: flex;
+  }
+  .wrapper {
+    padding: 24px;
+  }
+  .arrowContainer {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1151px) {
+  .speakersContainer {
+    width: 900px;
+  }
+  .name {
+    display: none;
+  }
+  .nameDesktop {
+    display: block;
+    font-size: 19px;
+    line-height: 110%;
+  }
+  .info {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .plusContainer {
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+  }
+  .photo {
+    width: 207px;
+    height: 207px;
+  }
+  .infoFooter {
+    width: 30%;
+    padding: 12px;
+    margin-left: 630px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .ungleWhite {
+    left: -3.1em;
+    top: 0.6em;
+    width: 48px;
+    height: 48px;
+  }
+  .speakerWrapper {
+    display: flex;
+  }
+  .wrapper {
+    padding: 24px;
+  }
+  .arrowContainer {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1920px) {
+  .speakersContainer {
+    width: 1200px;
+  }
+  .photo {
+    width: 208px;
+    height: 208px;
+  }
+  .title {
+    font-size: 60px;
+  }
+  .name {
+    display: none;
+  }
+  .nameDesktop {
+    display: block;
+    font-size: 24px;
+    line-height: 110%;
+  }
+  .info {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .plusContainer {
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+  }
+  .infoFooter {
+    width: 30%;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 70%;
+  }
+  .ungleWhite {
+    left: -2.4em;
+    top: 0.6em;
+    width: 48px;
+    height: 48px;
+  }
+  .speakerWrapper {
+    display: flex;
+  }
+  .wrapper {
+    padding: 24px;
+  }
+  .arrowContainer {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,462 @@
+.speakersContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  /* overflow: hidden; */
+}
+.title {
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 8px;
+  background: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+
+  /* transition-duration: 1s easy; */
+}
+.arrowRight,
+.arrowLeft {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  /* transition-duration: 1s easy; */
+}
+.arrowLeft {
+  transform: rotate(135deg);
+}
+.arrow:hover,
+.arrow.focus {
+  background: #ffffff;
+  /* transition-duration: 1s; */
+}
+.arrow:hover .arrowRight,
+.arrow:hover .arrowLeft {
+  border-color: black;
+  /* transition-duration: 1s; */
+}
+
+.photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+}
+.name {
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.position {
+  border-radius: 11px;
+  padding: 11px;
+  margin-top: 11px;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%;
+  text-align: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #0047ff;
+  background: #eeeeee;
+}
+.line {
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px solid #ffffff;
+  margin-left: 20px;
+}
+.photoContainer {
+  display: flex;
+  align-items: center;
+}
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 12%;
+  margin-top: 20px;
+}
+.speakerWrapper {
+  margin-top: 50px;
+}
+
+.arrowContainer {
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.variant {
+  /* margin-top: 65px; */
+  width: 100%;
+  opacity: 0;
+  transition-duration: 1s ease-in-out;
+}
+
+.variantActive {
+  opacity: 1;
+  transition-duration: 1s ease-in-out;
+}
+.lines {
+  width: 100%;
+  height: auto;
+  margin-top: 15%;
+}
+.ean,
+.iconContainer {
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  margin-left: 230px;
+  background-color: black;
+  /* transform: rotate(-90deg); */
+}
+
+.iconContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  height: 36px;
+  border-radius: 0 0 15px 15px;
+  padding: 2px;
+  margin-top: -5px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  /* padding:  0 2px;  */
+}
+.form {
+  display: flex;
+  border-radius: 15px 15px 0 15px;
+  padding: 12px;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000;
+}
+
+.ungleRightBottom {
+  position: absolute;
+  top: -1.4em;
+  right: 4.2em;
+  transform: rotate(90deg);
+}
+.btn {
+  position: absolute;
+  bottom: 0em;
+  border-radius: 10px;
+  padding: 12px 24px;
+  margin-top: -20px;
+  border-color: transparent;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background: #8fff00;
+  cursor: pointer;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover,
+.btn:focus {
+  color: white;
+  background: transparent;
+  border-color: #8fff00;
+  /* transition-duration: 1s; */
+}
+.btnDesktop:hover,
+.btnDesktop:focus {
+  color: white;
+  background: #0047ff;
+  border: none;
+}
+.speakersSign {
+  position: relative;
+  margin-top: 50px;
+}
+.desktop {
+  display: none;
+}
+.btnDesktop {
+  display: none;
+  border-radius: 10px;
+  border: none;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background: #8fff00;
+  cursor: pointer;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.desktopVariant {
+  width: 240px;
+}
+
+@media (max-width: 1151px) and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .line {
+    width: 25px;
+    border-bottom: 2px solid #ffffff;
+    margin: 12px;
+  }
+
+  .iconContainer {
+    height: 70px;
+    width: 100px;
+    padding: 10px 2px 10px 2px;
+    margin-left: 380px;
+  }
+  .ungleRightBottom {
+    position: absolute;
+    top: -0.1em;
+    right: 6.1em;
+    transform: rotate(90deg);
+  }
+  .icon {
+    width: 38px;
+    height: 38px;
+  }
+  .ean {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: -16.5em;
+    top: 3.5em;
+    background-color: black;
+    transform: rotate(-90deg);
+  }
+  .form {
+    padding: 24px;
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .speakersContainer {
+    width: 480px;
+  }
+  .btn {
+    width: 370px;
+    width: 370px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1151px) and (min-width: 1024px) {
+  .speakersContainer {
+    width: 720px;
+  }
+  .iconContainer {
+    height: 70px;
+    width: 100px;
+    padding: 10px 2px 10px 2px;
+    margin-left: 620px;
+  }
+  .ungleRightBottom {
+    position: absolute;
+    top: -0.1em;
+    right: 6.1em;
+    transform: rotate(90deg);
+  }
+  .icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .btn {
+    display: none;
+  }
+  .btnDesktop {
+    display: block;
+    width: 370px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1151px) {
+  .speakersContainer {
+    width: 900px;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .line {
+    width: 25px;
+    border-bottom: 2px solid #ffffff;
+    margin: 12px;
+  }
+  .iconContainer {
+    height: 70px;
+    width: 120px;
+    padding: 10px 2px 10px 2px;
+    margin-left: 780px;
+    border-radius: 0 0 20px 20px;
+  }
+  .ungleRightBottom {
+    position: absolute;
+    top: 0em;
+    right: 7.3em;
+    width: 32px;
+    height: 32px;
+    transform: rotate(90deg);
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+  .ean {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    left: -16.5em;
+    top: 4.2em;
+    background-color: black;
+    transform: rotate(-90deg);
+  }
+  .form {
+    padding: 24px;
+    font-size: 48px;
+    border-radius: 20px 20px 0 20px;
+  }
+  .btn {
+    display: none;
+  }
+  .btnDesktop {
+    display: block;
+    width: 370px;
+    font-size: 26px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .speakersContainer {
+    width: 1200px;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .line {
+    width: 25px;
+    border-bottom: 2px solid #ffffff;
+    margin: 12px;
+  }
+  .photo {
+    width: 293px;
+    height: 293px;
+    border-radius: 50%;
+  }
+  .name {
+    font-size: 32px;
+  }
+  .position {
+    font-size: 20px;
+  }
+  .iconContainer {
+    height: 100px;
+    width: 180px;
+    padding: 10px 2px 10px 2px;
+    border-radius: 0 0 32px 32px;
+    margin-left: 1020px;
+  }
+  .ungleRightBottom {
+    position: absolute;
+    top: 0em;
+    right: 11em;
+    width: 48px;
+    height: 48px;
+    transform: rotate(90deg);
+  }
+  .icon {
+    width: 64px;
+    height: 64px;
+  }
+  .ean {
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: -16.5em;
+    top: 5.4em;
+    background-color: black;
+    transform: rotate(-90deg);
+  }
+  .form {
+    padding: 24px;
+    font-size: 64px;
+    border-radius: 32px 32px 0 32px;
+  }
+  .btn {
+    display: none;
+  }
+  .desktopVariant {
+    width: 400px;
+  }
+  .btnDesktop {
+    display: block;
+    width: 600px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}

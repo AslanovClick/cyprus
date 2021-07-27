@@ -1,0 +1,618 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 41px;
+}
+.container, .mainContainer, .timerContainer {
+  width: 300px;
+}
+.timerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    background: #EEEEEE;
+    border-radius: 19px;
+}
+
+.headerTextContainerOne,
+.headerTextContainerTwo,
+.headerTextRightContainerThree,
+.headerTextContainerFour,
+.mainTextJoinSection {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  font-family: TT Lakes Neue;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: black;
+  padding: 5px 14px 5px 14px;
+  font-style: normal;
+  border-color: transparent;
+}
+
+.mainTextJoinSection {
+  position: relative;
+  display: none;
+  border-radius: 0 20px 20px 20px;
+}
+.ungleJoinRight {
+  position: absolute;
+  top: -0.4em;
+  right: 4em;
+  transform: rotate(-90deg);
+}
+
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.headerTextContainerOne {
+  border-radius: 14px 14px 14px 0;
+}
+
+.headerTextContainerTwo {
+  border-radius: 0 0 0 14px;
+}
+
+.ungleRightTop {
+  position: absolute;
+  top: -0.06em;
+  right: -0.65em;
+}
+.ungleRightBottom {
+  position: absolute;
+  top: 0.73em;
+  right: -0.66em;
+  transform: rotate(270deg);
+}
+
+.headerTextRightContainerThree {
+  left: 1.35em;
+  border-radius: 0 14px 14px 0;
+}
+
+.headerTextContainerFour {
+  right: 0.2em;
+  border-radius: 14px 0 14px 14px;
+}
+.ungleLeftTop {
+  position: absolute;
+  top: -0.06em;
+  left: -0.65em;
+  transform: rotate(90deg);
+}
+.ungleLeftBottom {
+  position: absolute;
+  top: 0.68em;
+  left: -0.67em;
+  transform: rotate(180deg);
+}
+.ungleRightLast {
+  position: absolute;
+  top: -0.1em;
+  right: -0.46em;
+  width: 20px;
+  height: 20px;
+}
+.ungleJoinLeftTop {
+  position: absolute;
+  left: 2.6em;
+  top: 1.2em;
+  transform: rotate(90deg);
+}
+.dateSection {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 67%;
+}
+.dateContainer {
+  position: relative;
+}
+.date,
+.dateYear {
+  border: none;
+  background: #eeeeee;
+  font-family: TT Lakes Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.date {
+  padding: 5px;
+  border-radius: 9px 9px 9px 0;
+}
+.dateYear {
+  position: absolute;
+  display: inline-block;
+  top: 2em;
+  padding: 0 5px 5px 5px;
+  border-radius: 0 0 9px 9px;
+}
+.ungleWhite {
+  position: absolute;
+  left: 2.5em;
+  bottom: -0.7em;
+  width: 12px;
+  height: 12px;
+}
+
+.plusSection{
+    position: absolute;
+    right: -12em;
+    top: 0.5em;
+    display: flex;
+    color: white;
+}
+.plus{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+
+
+.timerHead{
+    font-family: TT Lakes Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #0047FF;
+}
+
+.timerBtn{
+    width: 90%;
+    padding: 10px;
+    margin: 12px 0;
+    font-family: TT Lakes Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000; 
+    background: #8FFF00;
+border-radius: 30px;
+border: transparent;
+cursor: pointer;
+transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.timerBtn:hover, .timerBtn:focus{
+  background: #0047FF;
+  color: #FFFFFF;
+}
+
+.line {
+  margin: 10px 0 ;
+  position: relative;
+  width: 90%;
+  border-bottom: 1px solid #000000;
+}
+.lineLeft {
+  position: absolute;
+  top: -0.5em;
+  height: 16px;
+  border-left: 1px solid #000000;
+}
+.lineRight {
+  position: absolute;
+  top: -0.5em;
+  right: 0em;
+  height: 16px;
+  border-left: 1px solid #000000;
+}
+.ean{
+  width: 90%;
+  margin-bottom: 16px;
+}
+
+.tracksBtn{
+  position: absolute;
+  left: 0;
+  bottom: -2em;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    font-size: 30px;
+  background: #FFFFFF;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.countDownContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lines{
+  position: absolute;
+  bottom: -7em;
+  width: 100%;
+  height: auto;
+}
+
+.tracksBtnText{
+  display: none;
+  font-family: TT Lakes Neue;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.tracksBtnPlus{
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1151px) and (min-width: 768px) {
+  .headerTextContainerOne,
+  .headerTextContainerTwo,
+  .headerTextRightContainerThree,
+  .headerTextContainerFour,
+  .mainTextJoinSection {
+    font-size: 58px;
+  }
+  .ungleRightTop {
+    top: -0.06em;
+    right: -0.4em;
+  }
+  .ungleRightBottom {
+    top: 0.88em;
+    right: -0.4em;
+  }
+  .ungleLeftTop {
+    top: -0.06em;
+    left: -0.4em;
+  }
+  .ungleLeftBottom {
+    top: 0.85em;
+    left: -0.4em;
+  }
+  .ungleRightLast {
+    top: -0.01em;
+    right: -0.33em;
+  }
+  .date,
+.dateYear {
+    padding: 6px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.ungleWhite {
+    left: 3.7em;
+  }
+  
+  .line {
+    border-bottom: 2px solid #000000;
+  }
+  .lineLeft {
+    border-left: 2px solid #000000;
+  }
+  .lineRight {
+    border-left: 2px solid #000000;
+  }
+
+  .timerHead{
+    margin-top: 24px;
+    margin-right: 50%;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .timerBtn{
+    padding: 19px 0 ;
+    margin: 24px 0;
+
+  }
+  .tracksBtn{
+    left: -2em;
+    bottom: 2.6em;
+    width: 48px;
+    height: 48px;
+    font-size: 46px;
+  }
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container,.mainContainer, .timerContainer {
+    width: 480px;
+  }
+  .plusSection{
+    right: -19em;
+}
+.plus{
+    width: 32px;
+    height: 32px;
+    font-size: 28px;
+}
+}
+@media (max-width: 1151px) and (min-width: 1024px) {
+  .container,.mainContainer, .timerContainer {
+    width: 720px;
+  }
+  .mainTextJoinSection {
+    display: block;
+  }
+  .headerTextContainerTwo,
+  .headerTextRightContainerThree {
+    display: none;
+  }
+  .headerTextContainerOne {
+    border-radius: 14px 14px 0 0;
+  }
+  .headerTextContainerFour {
+    left: 3em;
+    border-radius: 0 0 14px 14px;
+  }
+  .dateSection {
+   position: relative;
+}
+  .dateContainer {
+      top: -4em;
+    left: 1em;
+}
+.plusSection{
+    right: -35em;
+    top: -14em;
+}
+.plus{
+    width: 32px;
+    height: 32px;
+    font-size: 28px;
+}
+.timerHead{
+  margin-top: 29px;
+  font-size: 15px;
+  line-height: 21px;
+}
+.countDownContainer{
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.timerBtn{
+  width: 40%;
+}
+.lines{
+  bottom: -10em;
+}
+
+}
+@media (max-width: 1920px) and (min-width: 1151px) {
+  .container,.mainContainer, .timerContainer {
+    width: 900px;
+  }
+  .headerTextContainerOne,
+  .headerTextContainerTwo,
+  .headerTextRightContainerThree,
+  .headerTextContainerFour,
+  .mainTextJoinSection {
+    font-size: 72px;
+  }
+  .mainTextJoinSection {
+    display: block;
+  }
+  .headerTextContainerTwo,
+  .headerTextRightContainerThree {
+    display: none;
+  }
+  .headerTextContainerFour {
+    left: 3em;
+    border-radius: 0 0 14px 14px;
+  }
+  .ungleJoinRight {
+    top: -0.32em;
+    right: 4.25em;
+  }
+  .headerTextContainerOne {
+    border-radius: 14px 14px 0 0;
+  }
+  .ungleJoinLeftTop {
+    left: 2.7em;
+  }
+  .ungleRightLast {
+    top: -0.01em;
+    right: -0.25em;
+  }
+  .date,
+  .dateYear {
+      padding: 7px;
+      font-size: 20px;
+      line-height: 28px;
+  }
+  .dateSection {
+    position: relative;
+ }
+   .dateContainer {
+       top: -5em;
+     left: 1em;
+ }
+ .ungleWhite {
+    position: absolute;
+    left: 4.6em;
+    bottom: -1.4em;
+    width: 24px;
+    height: 24px;
+  }
+  .plusSection{
+    right: -41em;
+    top: -17em;
+}
+.plus{
+    width: 48px;
+    height: 48px;
+    font-size: 46px;
+}
+.timerBtn{
+  width: 45%;
+  padding: 24px  0;
+  font-size: 20px;
+line-height: 28px;
+}
+.timerHead{
+  margin-right: 60%;
+  margin-top: 29px;
+  font-size: 15px;
+  line-height: 21px;
+}
+.countDownContainer{
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tracksBtn{
+  left: -2em;
+  bottom: 2.6em;
+  width: 48px;
+  height: 48px;
+  font-size: 46px;
+}
+.lines{
+  bottom: -14em;
+}
+}
+
+@media (min-width: 1920px) {
+  .container,.mainContainer,.timerContainer {
+    width: 1200px;
+  }
+  .headerTextContainerOne,
+  .headerTextContainerTwo,
+  .headerTextRightContainerThree,
+  .headerTextContainerFour,
+  .mainTextJoinSection {
+    font-size: 96px;
+  }
+  .mainTextJoinSection {
+    display: block;
+  }
+  .headerTextContainerTwo,
+  .headerTextRightContainerThree {
+    display: none;
+  }
+  .headerTextContainerFour {
+    left: 3.5em;
+    border-radius: 0 0 14px 14px;
+  }
+  .ungleJoinRight,
+  .ungleJoinLeftTop,
+  .ungleRightLast {
+    width: 32px;
+    height: 32px;
+  }
+  .ungleJoinRight {
+    top: -0.32em;
+    right: 4.4em;
+  }
+  .headerTextContainerOne {
+    border-radius: 14px 14px 0 0;
+  }
+  .ungleJoinLeftTop {
+    left: 3.2em;
+  }
+  .ungleRightLast {
+    top: -0.01em;
+    right: -0.25em;
+  }
+  .date,
+  .dateYear {
+      padding: 9px;
+      font-size: 27px;
+      line-height: 38px;
+  }
+  .dateSection {
+    position: relative;
+ }
+   .dateContainer {
+       top: -6em;
+     left: 1em;
+ }
+ .ungleWhite {
+    position: absolute;
+    left: 6.3em;
+    bottom: -1.4em;
+    width: 24px;
+    height: 24px;
+  }
+  .plusSection{
+    right: -55em;
+    top: -21em;
+}
+.plus{
+    width: 56px;
+    height: 56px;
+    font-size: 54px;
+}
+.timerBtn{
+  /* width: 70%; */
+  padding: 29px 0;
+  font-size: 28px;
+line-height: 39px;
+}
+.timerHead{
+  margin-right: 60%;
+  margin-top: 40px;
+  font-size: 20px;
+line-height: 28px;
+}
+.countDownContainer{
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tracksBtn{
+  align-items: center;
+  left: -6em;
+  bottom: 5.6em;
+  width: 210px;
+  height: 48px;
+  font-size: 46px;
+}
+.tracksBtnText{
+  display: block;
+}
+.tracksBtnPlus{
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  font-size: 48px;
+}
+.lines{
+  bottom: -14em;
+}
+}

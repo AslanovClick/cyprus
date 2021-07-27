@@ -1,0 +1,368 @@
+.attendContainer{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.title{
+font-family: TT Lakes Neue;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 110%;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.variantTitle, .variantTitleActive{
+    position: relative;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 10px;
+    font-family: TT Lakes Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 110%;
+    background: #EEEEEE;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #0047FF;
+    cursor: pointer;
+}
+.variantTitle{
+background: #000000;
+color: #FFFFFF;
+}
+.sliderCount, .sliderCountTop{
+    display: flex;
+    justify-content: center;
+}
+.sliderCountTop{
+    display: none;
+    justify-content: flex-start;
+}
+.attendContent{
+    background: #EEEEEE;
+border-radius: 15px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100%;
+    height: auto;
+    padding: 12px;
+}
+
+.attendInfo{
+    height: 208px;
+    font-family: TT Lakes Neue;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 17px;
+text-transform: uppercase;
+color: #000000;
+}
+.icons{
+    display: flex;
+    /* margin-top: 60px; */
+}
+.circles{
+    width: 162px;
+    height: 80px;
+}
+.ean{
+    width: 100px;
+    height: 85px;
+    /* transform: rotate(-90deg); */
+  }
+  .choiceWrapper{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 50px 0;
+  }
+  .plusActive{
+transform: rotate(45deg);
+  }
+  .choice{
+      padding: 21px;
+      margin-bottom: 12px;
+      width: 72px;
+      height: 72px;
+      font-size: 32px;
+      border-radius: 50%;
+      background: #EEEEEE;
+transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .plusContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 120px;
+font-family: TT Lakes Neue;
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 14px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+cursor: pointer;
+transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* .video{
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+
+  } */
+
+.plusContainer:hover, .plusContainer:focus{
+    color:#8FFF00;
+}
+.plusContainer:hover .choice, .plusContainer:focus .choice{
+    background-color: #8FFF00;
+}
+
+.ungleWhite {
+    position: absolute;
+    left: 3.4em;
+    bottom: -0.2em;
+    width: 24px;
+    height: 24px;
+    transform: rotate(-90deg);
+  }
+
+  .ungleWhiteHide{
+      display: none;
+  }
+
+ @media (max-width: 1151px) and (min-width: 768px) {
+    .choice{
+        width: 84px;
+        height: 84px;
+    }
+    .plusContainer{
+      width: 200px;
+        font-size: 14px;
+line-height: 20px;
+    }
+  }
+  
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .attendContainer{
+      width: 480px;
+    }
+    .variantTitle, .variantTitleActive{
+        font-size: 16px;
+    }
+    .attendInfo{
+        font-size: 16px;
+line-height: 22px;
+    }
+    .circles{
+        width: 236px;
+        height: 120px;
+    }
+    .ean{
+        width: 100px;
+        height: 120px;
+      }
+
+  }
+  @media (max-width: 1151px) and (min-width: 1024px) {
+    .attendContainer {
+      width: 720px;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+    .attendInfo{
+        height: auto;
+    }
+    .circles{
+        width: 236px;
+        height: 150px;
+    }
+    .ean{
+        width: 100px;
+        height: 150px;
+      }
+    .icons{
+        width: auto;
+        height: auto;
+    }
+    .sliderCount{
+        display: none;
+    }
+    .sliderCountTop{
+        display: flex;
+    }
+    .variantTitleActive{
+        border-radius: 10px 10px 0 0;
+        padding: 12px;
+        margin: 0;
+        height: 55px;
+    }
+
+    .variantTitle, .variantTitleActive{
+        font-size: 12px;
+    }
+    .attendContent{
+    border-radius: 0 15px 15px 15px;
+    }
+  }
+  @media (max-width: 1920px) and (min-width: 1151px) {
+    .attendContainer {
+      width: 900px;
+    }
+    .choice{
+        padding: 26px;
+        width: 104px;
+        height: 104px;
+    }
+    .plusContainer{
+      width: 200px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+    .attendInfo{
+        height: auto;
+        padding: 40px 0;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .circles{
+        width: 236px;
+        height: 160px;
+    }
+    .ean{
+        width: 100px;
+        height: 160px;
+      }
+    .icons{
+        width: auto;
+        height: auto;
+    }
+    .sliderCount{
+        display: none;
+    }
+    .sliderCountTop{
+        display: flex;
+    }
+    .variantTitleActive{
+        border-radius: 10px 10px 0 0;
+        padding: 12px;
+        margin: 0;
+        height: 56px;
+    }
+
+    .variantTitle, .variantTitleActive{
+        font-size: 15px;
+    }
+    .attendContent{
+    border-radius: 0 15px 15px 15px;
+    }
+    .ungleWhite {
+        left: 3em;
+     }
+  }
+  
+  @media (min-width: 1920px) {
+    .attendContainer {
+      width: 1200px;
+    }
+    .choice{
+        padding: 36px;
+        width: 140px;
+        height: 140px;
+    }
+    .plusContainer{
+      width: 200px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+    .attendInfo{
+        height: auto;
+        padding: 40px 0;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .circles{
+        margin: 10px;
+        width: 320px;
+        height: 160px;
+    }
+    .ean{
+        width: 100px;
+        height: 180px;
+      }
+    .icons{
+        width: auto;
+        height: auto;
+    }
+    .sliderCount{
+        display: none;
+    }
+    .sliderCountTop{
+        display: flex;
+    }
+    .variantTitleActive{
+        border-radius: 10px 10px 0 0;
+        padding: 12px;
+        margin: 0;
+        height: 62px;
+    }
+
+    .variantTitle, .variantTitleActive{
+        font-size: 20px;
+    }
+    .attendContent{
+    border-radius: 0 15px 15px 15px;
+    }
+    .ungleWhite {
+        width: 32px;
+        height: 32px;
+        left: 2.6em;
+     }
+  }
